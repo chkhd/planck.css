@@ -3,3 +3,8 @@
     --white: white;
     --gray: gray;
 }
+
+:root {
+    --color: white;
+    --bg-color: black;
+}
