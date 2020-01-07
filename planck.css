@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/*
+We could just import themes here directly:
+@import "./dark-theme.css" (prefers-color-scheme: dark);
+@import "./light-theme.css" (prefers-color-scheme: light), (prefers-color-scheme: no-preference);
+
+Instead, specify them in HTML, saving bandwidth and reducing load time:
+<head>
+<link rel="stylesheet" href="css/dark-theme.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+<link rel="stylesheet" href="css/planck.css">
+</head>
+*/
+
+@media only screen
+and (max-width : 600px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen
+and (min-width : 601px) {
+    .mobile {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.notify {
+    color: var(--notify);
+    background-color: var(--notify-bg);
+}
+
+.warn {
+    color: var(--warn);
+    background-color: var(--warn-bg);
+}
+
+.success, .ok {
+    color: var(--success);
+    background-color: var(--success-bg);
+}
+
+.failure, .cancel {
+    color: var(--failure);
+    background-color: var(failure-bg);
+}
+
+.interesting {
+    color: var(--interesting);
+    background-color: var(--interesting-bg);
+}
+
+.important {
+    color: var(--important);
+    background-color: var(--important-bg);
+}
+
+.unimportant {
+    color: var(--unimportant);
+    background-color: var(--unimportant-bg);
+}
+
+.disabled {
+    color: var(--disabled);
+    background-color: var(--disabled--bg);
+}
+
+.dim {
+    color: var(--dim);
+    background-color: var(--dim--bg);
+}
+
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+*:focus {
+    outline: none;
+}
+
+.shadow {
+    box-shadow: 10px 10px var(--shadow);
+    box-shadow: 0 4px 8px 0 var(--shadow), 0 6px 20px 0 var(--shadow-secondary);
+}
+
+body {
+    color: var(--color);
+    background-color: var(--background-color);
+
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.monospace {
+    font-family: 'SF Mono',monospace !important;
+}
+
+.code {
+    font-family: 'SF Mono',monospace !important;
+    border-radius: 4px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-color: var(--code-bg);
+    color: var(--code);
+}
+
+.key {
+    font-family: 'SF Mono',monospace !important;
+    border-radius: 4px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-color: var(--key-bg);
+    color: var(--key);
+}
+
+.mobile {
+    color: var(--color)
+}
+
+.desktop {
+    color: var(--color)
+}
+
+.button {
+
+}
+
+.button:hover {
+
+}
+
+.button:focus {
+
+}
+
+.menu {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    float: top;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu-start {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.menu-end {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.menu-item {
+    padding: .5rem .75rem;
+    position: relative;
+    color: var(--menu-item);
+    background-color: var(--menu-item-bg);
+    text-decoration: none;
+}
+
+.active {
+    color: var(--active);
+    background-color: var(--active-bg);
+} 
+
+.logo {
+    color: var(--logo);
+    background-color: var(--logo-bg);
+    text-decoration: none;
+}
+
+main, .content {
+    margin: 1rem 1rem 1rem 1rem;
+    flex: 1 0 auto;
+}
+
+a {
+    color: var(--link);
+    background-color: var(--link-bg);
+}
+
+a:hover {
+    color: var(--link-hover);
+    background-color: var(--link-hover-bg);
+}
+
+header, .header {
+    flex-shrink: 0;
+
+    color: var(--header);
+	background-color: var(--header-bg);
+}
+
+footer, .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-shrink: 0;
+
+    color: var(--footer);
+    background-color: var(--footer-bg);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.table {
+
+}
+
+.form {
+
+}
+
+.message {
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    color: var(--message);
+    background-color: var(--message-bg);
+}
