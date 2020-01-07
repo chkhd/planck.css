@@ -116,7 +116,7 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-.monospace {
+.monospace, .mono {
     font-family: 'SF Mono',monospace !important;
 }
 
@@ -159,8 +159,8 @@ body {
 }
 
 nav, .menu, .nav {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
 
     float: top;
     display: flex;
@@ -200,7 +200,7 @@ nav, .menu, .nav {
 }
 
 main, .content {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1em 1em 1em 1em;
     flex: 1 0 auto;
 }
 
@@ -223,8 +223,8 @@ header, .header {
 }
 
 footer, .footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
     flex-shrink: 0;
 
     color: var(--footer);
