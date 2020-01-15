@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import "./xcode-dark-theme.css" (prefers-color-scheme: dark);
-@import "./light-theme.css" (prefers-color-scheme: light), (prefers-color-scheme: no-preference);
+@import "./xcode-light-theme.css" (prefers-color-scheme: light), (prefers-color-scheme: no-preference);
 
 @media only screen
 and (max-width : 600px) {
