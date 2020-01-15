@@ -1,17 +1,7 @@
 @charset "utf-8";
 
-/*
-We could just import themes here directly:
-@import "./dark-theme.css" (prefers-color-scheme: dark);
+@import "./xcode-dark-theme.css" (prefers-color-scheme: dark);
 @import "./light-theme.css" (prefers-color-scheme: light), (prefers-color-scheme: no-preference);
-
-Instead, specify them in HTML, saving bandwidth and reducing load time:
-<head>
-<link rel="stylesheet" href="css/dark-theme.css" media="(prefers-color-scheme: dark)">
-<link rel="stylesheet" href="css/light-theme.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-<link rel="stylesheet" href="css/planck.css">
-</head>
-*/
 
 @media only screen
 and (max-width : 600px) {
@@ -159,13 +149,11 @@ body {
 }
 
 nav, .menu, .nav {
-    margin-left: 1em;
-    margin-right: 1em;
-
     float: top;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin: 0 1rem;
 }
 
 .menu-start, .nav-start {
@@ -200,7 +188,7 @@ nav, .menu, .nav {
 }
 
 main, .content {
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1em;
     flex: 1 0 auto;
 }
 
@@ -223,8 +211,8 @@ header, .header {
 }
 
 footer, .footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     flex-shrink: 0;
 
     color: var(--footer);
@@ -234,16 +222,15 @@ footer, .footer {
 }
 
 .table {
-
+    color: var(--color);
 }
 
 .form {
-
+    color: var(--color);
 }
 
 .message {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin: 3rem 0;
 
     color: var(--message);
     background-color: var(--message-bg);
