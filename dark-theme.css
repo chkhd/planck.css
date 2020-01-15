@@ -1,0 +1,67 @@
+:root {
+    --white: white;
+    --black: black;
+    --red: #ec5344;
+    --orange: #f2a13c;
+    --yellow: #f9d54a;
+    --green: #68cc66;
+    --teal: #7fd0fa;
+    --blue: #3585f7;
+    --indigo: #5c60de;
+    --purple: #b264ea;
+    --pink: #ec4b62;
+    --gray: #98989d;
+    --gray2: #626265;
+    --gray3: #48484a;
+    --gray4: #3a3a3c;
+    --gray5: #2c2c2e;
+    --gray6: #1c1c1e;
+}
+
+:root {
+    --color: var(--gray);
+    --bg-color: var(--gray3);
+}
+
+:root {
+    --nav-bg: var(--bg-color);
+
+    --button-bg: var(--color);
+    --button: var(--bg-color);
+
+    --highlight: var(--white);
+    --highlight-bg: var(--gray2);
+
+    --navlink: var(--white);
+    --navlink-bg: var(--bg-color);
+
+    --navlink-hover: var(--white);
+    --navlink-hover-bg: var(--gray2);
+
+    --link: var(--gray1);
+    --link-bg: var(--bg-color);
+
+    --link-hover: var(--white);
+    --link-hover-bg: var(--gray1);
+
+    --logo: var(--white);
+    --logo-bg: var(--gray1);
+
+    --dim: var(--gray2);
+
+    --code: var(--green);
+    --code-bg: var(--gray2);
+
+    --active: var(--white);
+    --active-bg: var(--gray1);
+}
+
+::selection {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+::-moz-selection {
+    background-color: var(--white);
+    color: var(--black);
+}

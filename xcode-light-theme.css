@@ -1,21 +1,26 @@
 :root {
     --white: white;
     --black: black;
-    --red: #ec4d3d;
-    --orange: #f19938;
-    --yellow: #f8cb45;
-    --green: #64c265;
-    --teal: #75c6f5;
-    --blue: #2e7df6;
-    --indigo: #555bce;
-    --purple: #a25cd6;
-    --pink: #eb445a;
-    --gray: #8d8d92;
-    --gray2: #aeaeb2;
-    --gray3: #c6c6cb;
-    --gray4: #d0d0d5;
-    --gray5: #e4e4ea;
-    --gray6: #f2f2f7;
+    --pink: #ef82b0;
+    --blue: #2c5b9d;
+    --light-blue: #87dcfb;
+    --teal: #66afc8;
+    --indigo: #d3bcfb;
+    --purple: #aa86e4;
+    --green: #87bfb3;
+    --dark-green: #88bfb3;
+    --yellow: #d6c786;
+    --gray: #dfdfdf;
+    --gray1: #808b96;
+    --gray2: #737478;
+    --gray3: #292a2f;
+    --orange: #ef8775;
+    --bright-red: #cf3126;
+    --red: #7c3d38;
+    --dark-red: #392e30;
+    --highline: #2f3138;
+    --highlight: #646f80;
+    --highlight-inactive: #6e6e6e;
 }
 
 :root {
@@ -30,10 +35,10 @@
     --button: var(--bg-color);
 
     --highlight: var(--white);
-    --highlight-bg: var(--gray2);
+    --highlight-bg: var(--black);
 
-    --navlink: var(--bg-color);
-    --navlink-bg: var(--black);
+    --navlink: var(--black);
+    --navlink-bg: var(--bg-color);
 
     --navlink-hover: var(--white);
     --navlink-hover-bg: var(--black);
